@@ -1,0 +1,4 @@
+ok
+platforms: linux/amd64,linux/arm64
+
+Arquivo de comentários

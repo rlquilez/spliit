@@ -1,0 +1,388 @@
+{
+  "Homepage": {
+    "title": "Comparte <strong>Gastos</strong> con <strong>Amigos y Familia</strong>",
+    "description": "¡Bienvenido a tu nueva instancia de <strong>Spliit</strong>!",
+    "button": {
+      "groups": "Ir a eventos",
+      "github": "GitHub"
+    }
+  },
+  "Header": {
+    "groups": "Eventos"
+  },
+  "Footer": {
+    "madeIn": "Hecho en Montreal, Quebec 🇨🇦",
+    "builtBy": "Desarrollado por <author>Sebastien Castiel</author> y <source>colaboradores</source>"
+  },
+  "Expenses": {
+    "title": "Gastos",
+    "description": "Aquí están los gastos que creaste para tu evento.",
+    "create": "Crear gasto",
+    "createFirst": "Crear el primero",
+    "noExpenses": "Tu evento no contiene ningún gasto todavía.",
+    "exportJson": "Exportar a JSON",
+    "searchPlaceholder": "Buscar un gasto...",
+    "ActiveUserModal": {
+      "title": "¿Quién eres?",
+      "description": "Dinos qué participante eres para personalizar cómo se muestra la información.",
+      "nobody": "No quiero seleccionar a nadie",
+      "save": "Guardar cambios",
+      "footer": "Esta configuración puede cambiarse más tarde en la configuración del evento."
+    },
+    "Groups": {
+      "upcoming": "Próximos",
+      "thisWeek": "Esta semana",
+      "earlierThisMonth": "Principios de este mes",
+      "lastMonth": "Mes pasado",
+      "earlierThisYear": "Principios de este año",
+      "lastYera": "Año pasado",
+      "older": "Más antiguos"
+    }
+  },
+  "ExpenseCard": {
+    "paidBy": "Pagado por <strong>{paidBy}</strong> para <paidFor></paidFor>",
+    "receivedBy": "Recibido por <strong>{paidBy}</strong> para <paidFor></paidFor>",
+    "yourBalance": "Tu balance:"
+  },
+  "Groups": {
+    "myGroups": "Mis eventos",
+    "create": "Crear",
+    "loadingRecent": "Cargando eventos recientes",
+    "NoRecent": {
+      "description": "No has visitado ningún evento recientemente.",
+      "create": "Crear uno",
+      "orAsk": "o pide a un amigo que te envíe el enlace a uno existente."
+    },
+    "recent": "Eventos recientes",
+    "starred": "Eventos destacados",
+    "archived": "Eventos archivados",
+    "archive": "Archivar evento",
+    "unarchive": "Desarchivar evento",
+    "removeRecent": "Eliminar de eventos recientes",
+    "RecentRemovedToast": {
+      "title": "Evento ha sido eliminado",
+      "description": "El evento fue eliminado de tu lista de eventos recientes.",
+      "undoAlt": "Deshacer eliminación de evento",
+      "undo": "Deshacer"
+    },
+    "AddByURL": {
+      "button": "Añadir por URL",
+      "title": "Añadir un evento por URL",
+      "description": "Si un evento fue compartido contigo, puedes pegar su URL aquí para añadirlo a tu lista.",
+      "error": "Ups, no podemos encontrar el evento desde la URL que proporcionaste..."
+    },
+    "NotFound": {
+      "text": "Este evento no existe.",
+      "link": "Ir a eventos visitados recientemente"
+    }
+  },
+  "GroupForm": {
+    "title": "Información del evento",
+    "NameField": {
+      "label": "Nombre del evento",
+      "placeholder": "Vacaciones de verano",
+      "description": "Ingresa un nombre para tu evento."
+    },
+    "InformationField": {
+      "label": "Información del evento",
+      "placeholder": "¿Qué información es relevante para los participantes del evento?"
+    },
+    "CurrencyField": {
+      "label": "Símbolo de moneda",
+      "placeholder": "$, €, £...",
+      "description": "Lo usaremos para mostrar cantidades."
+    },
+    "Participants": {
+      "title": "Participantes",
+      "description": "Ingresa el nombre de cada participante.",
+      "protectedParticipant": "Este participante es parte de los gastos y no puede ser eliminado.",
+      "new": "Nuevo",
+      "add": "Añadir participante",
+      "John": "Juan",
+      "Jane": "María",
+      "Jack": "Carlos"
+    },
+    "Settings": {
+      "title": "Configuración local",
+      "description": "Estas configuraciones son por dispositivo, y se usan para personalizar tu experiencia.",
+      "ActiveUserField": {
+        "label": "Usuario activo",
+        "placeholder": "Selecciona un participante",
+        "none": "Ninguno",
+        "description": "Usuario utilizado por defecto para pagar gastos."
+      },
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "create": "Crear",
+      "creating": "Creando...",
+      "cancel": "Cancelar"
+    }
+  },
+  "ExpenseForm": {
+    "Income": {
+      "create": "Crear ingreso",
+      "edit": "Editar ingreso",
+      "TitleField": {
+        "label": "Título del ingreso",
+        "placeholder": "Restaurante del lunes por la noche",
+        "description": "Ingresa una descripción para el ingreso."
+      },
+      "DateField": {
+        "label": "Fecha del ingreso",
+        "description": "Ingresa la fecha en que se recibió el ingreso."
+      },
+      "categoryFieldDescription": "Selecciona la categoría del ingreso.",
+      "paidByField": {
+        "label": "Recibido por",
+        "description": "Selecciona el participante que recibió el ingreso."
+      },
+      "paidFor": {
+        "title": "Recibido para",
+        "description": "Selecciona para quién se recibió el ingreso."
+      },
+      "splitModeDescription": "Selecciona cómo dividir el ingreso.",
+      "attachDescription": "Ver y adjuntar recibos al ingreso."
+    },
+    "Expense": {
+      "create": "Crear gasto",
+      "edit": "Editar gasto",
+      "TitleField": {
+        "label": "Título del gasto",
+        "placeholder": "Restaurante del lunes por la noche",
+        "description": "Ingresa una descripción para el gasto."
+      },
+      "DateField": {
+        "label": "Fecha del gasto",
+        "description": "Ingresa la fecha en que se pagó el gasto."
+      },
+      "categoryFieldDescription": "Selecciona la categoría del gasto.",
+      "paidByField": {
+        "label": "Pagado por",
+        "description": "Selecciona el participante que pagó el gasto."
+      },
+      "paidFor": {
+        "title": "Pagado para",
+        "description": "Selecciona para quién se pagó el gasto."
+      },
+      "splitModeDescription": "Selecciona cómo dividir el gasto.",
+      "attachDescription": "Ver y adjuntar recibos al gasto."
+    },
+    "amountField": {
+      "label": "Cantidad"
+    },
+    "isReimbursementField": {
+      "label": "Esto es un reembolso"
+    },
+    "categoryField": {
+      "label": "Categoría"
+    },
+    "notesField": {
+      "label": "Notas"
+    },
+    "selectNone": "No seleccionar ninguno",
+    "selectAll": "Seleccionar todos",
+    "shares": "parte(s)",
+    "advancedOptions": "Opciones avanzadas de división...",
+    "SplitModeField": {
+      "label": "Modo de división",
+      "evenly": "Equitativamente",
+      "byShares": "Desigualmente - Por partes",
+      "byPercentage": "Desigualmente - Por porcentaje",
+      "byAmount": "Desigualmente - Por cantidad",
+      "saveAsDefault": "Guardar como opciones de división predeterminadas"
+    },
+    "DeletePopup": {
+      "label": "Eliminar",
+      "title": "¿Eliminar este gasto?",
+      "description": "¿Realmente quieres eliminar este gasto? Esta acción es irreversible.",
+      "yes": "Sí",
+      "cancel": "Cancelar"
+    },
+    "attachDocuments": "Adjuntar documentos",
+    "create": "Crear",
+    "creating": "Creando...",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "reimbursement": "Reembolso"
+  },
+  "ExpenseDocumentsInput": {
+    "TooBigToast": {
+      "title": "El archivo es demasiado grande",
+      "description": "El tamaño máximo de archivo que puedes subir es {maxSize}. El tuyo es ${size}."
+    },
+    "ErrorToast": {
+      "title": "Error al subir documento",
+      "description": "Algo salió mal al subir el documento. Por favor, intenta más tarde o selecciona un archivo diferente.",
+      "retry": "Reintentar"
+    }
+  },
+  "CreateFromReceipt": {
+    "Dialog": {
+      "triggerTitle": "Crear gasto desde recibo",
+      "title": "Crear desde recibo",
+      "description": "Extrae la información del gasto desde una foto de recibo.",
+      "body": "Sube la foto de un recibo, y lo escanearemos para extraer la información del gasto si es posible.",
+      "selectImage": "Seleccionar imagen...",
+      "titleLabel": "Título:",
+      "categoryLabel": "Categoría:",
+      "amountLabel": "Cantidad:",
+      "dateLabel": "Fecha:",
+      "editNext": "Podrás editar la información del gasto a continuación.",
+      "continue": "Continuar"
+    },
+    "unknown": "Desconocido",
+    "TooBigToast": {
+      "title": "El archivo es demasiado grande",
+      "description": "El tamaño máximo de archivo que puedes subir es {maxSize}. El tuyo es ${size}."
+    },
+    "ErrorToast": {
+      "title": "Error al subir documento",
+      "description": "Algo salió mal al subir el documento. Por favor, intenta más tarde o selecciona un archivo diferente.",
+      "retry": "Reintentar"
+    }
+  },
+  "Balances": {
+    "title": "Balances",
+    "description": "Esta es la cantidad que cada participante pagó o por la que se pagó.",
+    "Reimbursements": {
+      "title": "Reembolsos sugeridos",
+      "description": "Aquí hay sugerencias para reembolsos optimizados entre participantes.",
+      "noImbursements": "Parece que tu evento no necesita ningún reembolso 😁",
+      "owes": "<strong>{from}</strong> debe a <strong>{to}</strong>",
+      "markAsPaid": "Marcar como pagado"
+    }
+  },
+  "Stats": {
+    "title": "Estadísticas",
+    "Totals": {
+      "title": "Totales",
+      "description": "Resumen de gastos de todo el evento.",
+      "groupSpendings": "Gastos totales del evento",
+      "groupEarnings": "Ingresos totales del evento",
+      "yourSpendings": "Tus gastos totales",
+      "yourEarnings": "Tus ingresos totales",
+      "yourShare": "Tu parte total"
+    }
+  },
+  "Activity": {
+    "title": "Actividad",
+    "description": "Visión general de toda la actividad en este evento.",
+    "noActivity": "Aún no hay actividad en tu evento.",
+    "someone": "Alguien",
+    "settingsModified": "La configuración del evento fue modificada por <strong>{participant}</strong>.",
+    "expenseCreated": "Gasto <em>{expense}</em> creado por <strong>{participant}</strong>.",
+    "expenseUpdated": "Gasto <em>{expense}</em> actualizado por <strong>{participant}</strong>.",
+    "expenseDeleted": "Gasto <em>{expense}</em> eliminado por <strong>{participant}</strong>.",
+    "Groups": {
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "earlierThisWeek": "Principios de esta semana",
+      "lastWeek": "Semana pasada",
+      "earlierThisMonth": "Principios de este mes",
+      "lastMonth": "Mes pasado",
+      "earlierThisYear": "Principios de este año",
+      "lastYear": "Año pasado",
+      "older": "Más antiguos"
+    }
+  },
+  "Information": {
+    "title": "Información",
+    "description": "Usa este lugar para añadir cualquier información que pueda ser relevante para los participantes del evento.",
+    "empty": "Aún no hay información del evento."
+  },
+  "Settings": {
+    "title": "Configuración"
+  },
+  "Share": {
+    "title": "Compartir",
+    "description": "Para que otros participantes vean el evento y añadan gastos, comparte su URL con ellos.",
+    "warning": "¡Advertencia!",
+    "warningHelp": "Cada persona con la URL del evento podrá ver y editar gastos. ¡Comparte con precaución!"
+  },
+  "SchemaErrors": {
+    "min1": "Introduce al menos un carácter.",
+    "min2": "Introduce al menos dos caracteres.",
+    "max5": "Introduce como máximo cinco caracteres.",
+    "max50": "Introduce como máximo 50 caracteres.",
+    "duplicateParticipantName": "Otro participante ya tiene este nombre.",
+    "titleRequired": "Por favor, introduce un título.",
+    "invalidNumber": "Número inválido.",
+    "amountRequired": "Debes introducir una cantidad.",
+    "amountNotZero": "La cantidad no debe ser cero.",
+    "amountTenMillion": "La cantidad debe ser menor a 10,000,000.",
+    "paidByRequired": "Debes seleccionar un participante.",
+    "paidForMin1": "El gasto debe ser pagado para al menos un participante.",
+    "noZeroShares": "Todas las partes deben ser mayores que 0.",
+    "amountSum": "La suma de las cantidades debe ser igual a la cantidad del gasto.",
+    "percentageSum": "La suma de los porcentajes debe ser igual a 100."
+  },
+  "Categories": {
+    "search": "Buscar categoría...",
+    "noCategory": "No se encontró ninguna categoría.",
+    "Uncategorized": {
+      "heading": "Sin categorizar",
+      "General": "General",
+      "Payment": "Pago"
+    },
+    "Entertainment": {
+      "heading": "Entretenimiento",
+      "Entertainment": "Entretenimiento",
+      "Games": "Juegos",
+      "Movies": "Películas",
+      "Music": "Música",
+      "Sports": "Deportes"
+    },
+    "Food and Drink": {
+      "heading": "Comida y Bebida",
+      "Food and Drink": "Comida y Bebida",
+      "Dining Out": "Comer Fuera",
+      "Groceries": "Comestibles",
+      "Liquor": "Licor"
+    },
+    "Home": {
+      "heading": "Hogar",
+      "Home": "Hogar",
+      "Electronics": "Electrónica",
+      "Furniture": "Muebles",
+      "Household Supplies": "Suministros del Hogar",
+      "Maintenance": "Mantenimiento",
+      "Mortgage": "Hipoteca",
+      "Pets": "Mascotas",
+      "Rent": "Alquiler",
+      "Services": "Servicios"
+    },
+    "Life": {
+      "heading": "Vida",
+      "Childcare": "Cuidado de Niños",
+      "Clothing": "Ropa",
+      "Education": "Educación",
+      "Gifts": "Regalos",
+      "Insurance": "Seguro",
+      "Medical Expenses": "Gastos Médicos",
+      "Taxes": "Impuestos"
+    },
+    "Transportation": {
+      "heading": "Transporte",
+      "Transportation": "Transporte",
+      "Bicycle": "Bicicleta",
+      "Bus/Train": "Autobús/Tren",
+      "Car": "Coche",
+      "Gas/Fuel": "Gasolina/Combustible",
+      "Hotel": "Hotel",
+      "Parking": "Estacionamiento",
+      "Plane": "Avión",
+      "Taxi": "Taxi"
+    },
+    "Utilities": {
+      "heading": "Servicios Públicos",
+      "Utilities": "Servicios Públicos",
+      "Cleaning": "Limpieza",
+      "Electricity": "Electricidad",
+      "Heat/Gas": "Calefacción/Gas",
+      "Trash": "Basura",
+      "TV/Phone/Internet": "TV/Teléfono/Internet",
+      "Water": "Agua"
+    }
+  }
+}
