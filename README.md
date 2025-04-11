@@ -84,6 +84,7 @@ Para ajudar a manter o projeto gratuito e sem anúncios:
 3. **Configurar ambiente**:
    ```bash
    cp .env.example .env
+   
    ```
 
 4. **Instalar dependências**:
