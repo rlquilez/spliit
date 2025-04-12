@@ -50,7 +50,8 @@ jobs:
       - name: Build e Push da imagem
         uses: docker/build-push-action@v6
         with:
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
+          #platforms: linux/amd64,linux/arm64
           context: .
           push: true
           tags: ${{ secrets.GIT_REGISTRY }}/${{ secrets.GIT_OWNER }}/spliit:latest
