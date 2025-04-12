@@ -57,4 +57,4 @@ COPY --from=base /usr/app/.next ./.next
 
 RUN chmod +x /usr/app/scripts/container-entrypoint.sh
 
-ENTRYPOINT ["/bin/sh", "/usr/app/scripts/container-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/usr/app/scripts/container-entrypoint.sh"]
