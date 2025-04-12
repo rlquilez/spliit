@@ -44,6 +44,7 @@ RUN npm ci --omit=dev --omit=optional --ignore-scripts && \
 FROM node:23-bookworm-slim AS runner
 
 RUN npm install -g npm@latest
+RUN apt-get update && apt-get install -y bash
 
 EXPOSE 3000/tcp
 WORKDIR /usr/app
@@ -57,4 +58,4 @@ COPY --from=base /usr/app/.next ./.next
 
 RUN chmod +x /usr/app/scripts/container-entrypoint.sh
 
-ENTRYPOINT ["/bin/bash", "/usr/app/scripts/container-entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/usr/app/scripts/container-entrypoint.sh"]
