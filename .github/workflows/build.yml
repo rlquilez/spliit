@@ -46,17 +46,11 @@ jobs:
     
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        with: # replace it with your local IP
-          config-inline: |
-            [registry.${{ secrets.GIT_REGISTRY }}]
         
       - name: Build e Push da imagem
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         with:
-          platforms: |
-            linux/amd64
-            linux/arm64
-          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
           context: .
           push: true
           tags: ${{ secrets.GIT_REGISTRY }}/${{ secrets.GIT_OWNER }}/spliit:latest
