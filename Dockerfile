@@ -1,6 +1,7 @@
 FROM node:23-bookworm-slim AS base
 
 RUN npm install -g npm@latest
+RUN apt-get update && apt-get install -y bash
 
 WORKDIR /usr/app
 COPY ./package.json \
@@ -31,6 +32,7 @@ RUN rm -r .next/cache
 FROM node:23-bookworm-slim AS runtime-deps
 
 RUN npm install -g npm@latest
+RUN apt-get update && apt-get install -y bash
 
 WORKDIR /usr/app
 COPY --from=base /usr/app/package.json /usr/app/package-lock.json /usr/app/next.config.mjs ./
