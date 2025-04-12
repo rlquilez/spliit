@@ -1,5 +1,8 @@
 FROM node:21-alpine AS base
 
+RUN npm install -g npm@latest
+RUN apk add --no-cache bash
+
 WORKDIR /usr/app
 COPY ./package.json \
      ./package-lock.json \
@@ -16,6 +19,7 @@ RUN apk add --no-cache openssl && \
     npx prisma generate
 
 COPY ./src ./src
+
 COPY ./messages ./messages
 
 ENV NEXT_TELEMETRY_DISABLED=1
@@ -27,6 +31,9 @@ RUN rm -r .next/cache
 
 FROM node:21-alpine AS runtime-deps
 
+RUN npm install -g npm@latest
+RUN apk add --no-cache bash
+
 WORKDIR /usr/app
 COPY --from=base /usr/app/package.json /usr/app/package-lock.json /usr/app/next.config.mjs ./
 COPY --from=base /usr/app/prisma ./prisma
@@ -35,6 +42,9 @@ RUN npm ci --omit=dev --omit=optional --ignore-scripts && \
     npx prisma generate
 
 FROM node:21-alpine AS runner
+
+RUN npm install -g npm@latest
+RUN apk add --no-cache bash
 
 EXPOSE 3000/tcp
 WORKDIR /usr/app
@@ -45,5 +55,7 @@ COPY ./public ./public
 COPY ./scripts ./scripts
 COPY --from=base /usr/app/prisma ./prisma
 COPY --from=base /usr/app/.next ./.next
+
+RUN chmod +x /usr/app/scripts/container-entrypoint.sh
 
 ENTRYPOINT ["/bin/sh", "/usr/app/scripts/container-entrypoint.sh"]
